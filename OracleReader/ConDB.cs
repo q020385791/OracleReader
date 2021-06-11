@@ -9,6 +9,11 @@ namespace OracleReader
 {
     public class ConDB
     {
-        public static OracleConnection db = new OracleConnection();
+         public  static  OracleConnection db = new OracleConnection();
+
+        public ConDB() 
+        {
+            db = new OracleConnection();
+        }
     }
 }

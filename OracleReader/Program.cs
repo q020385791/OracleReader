@@ -1,12 +1,15 @@
-﻿using Oracle.ManagedDataAccess.Client;
+﻿
+using Oracle.ManagedDataAccess.Client;
 using System;
 
 namespace OracleReader
 {
     class Program
     {
+        ConDB _db;
         static void Main(string[] args)
         {
+        
             ConDB.db.ConnectionString = "Data Source = (DESCRIPTION = (ADDRESS_LIST =(ADDRESS = (PROTOCOL = TCP)(HOST = '')(PORT = '')))(CONNECT_DATA =(SERVICE_NAME ='' ))); Persist Security Info = True; User ID ='' ; Password ='' ;";
             ConDB.db.Open();
             int UserIDCount = 0;
